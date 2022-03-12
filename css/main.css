@@ -117,6 +117,12 @@ main #Qualification {
       grid-template-rows: 200px 250px 250px;
 }
 
+main #Certificate {
+  background-image: url(../img/bg5.jpg);
+  -ms-grid-rows: 200px 250px 250px;
+      grid-template-rows: 200px 250px 250px;
+}
+
 main section:hover {
   opacity: 1;
 }
@@ -467,8 +473,10 @@ section .img2 {
   display: flex;
 }
 
-.technical .tech .progress-bar .progress {
+.technical .tech .progress-bar .progress::after {
   border-radius: 25px;
+  -webkit-animation: prog1 1s ease-in-out;
+          animation: prog1 1s ease-in-out;
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -539,6 +547,59 @@ section .img2 {
 }
 
 .quali .des p {
+  font-size: 12pt;
+  margin: 20px 10px;
+}
+
+.certificate {
+  background-color: rgba(16, 26, 21, 0.9);
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.certificate .company-img {
+  background-color: #071422;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/coding-academy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.certificate .des {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.certificate .des h3 {
+  font-size: 20pt;
+  margin: 20px 10px;
+}
+
+.certificate .des p {
   font-size: 12pt;
   margin: 20px 10px;
 }
