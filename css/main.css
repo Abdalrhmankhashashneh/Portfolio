@@ -9,6 +9,155 @@ html {
   scroll-behavior: smooth;
 }
 
+h3 {
+  font-size: 30pt;
+  color: #dadde0;
+  font-family: 'Roboto Slab', serif;
+  padding: 2%;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 350px 350px;
+      grid-template-rows: 350px 350px;
+  background-color: #1e2833;
+  color: aliceblue;
+}
+
+footer .refernce {
+  width: 100%;
+  background-color: #021312;
+  background: rgba(0, 0, 0, 0.6);
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .refernce .refernce1 {
+  border: 2px dashed #112c4b;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .refernce .refernce1 .img-triner {
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4D0BAQEIG5RkDRNPvg/company-logo_200_200/0/1574431121488?e=1655337600&v=beta&t=D4QbdfDXFNA5dnWSL-1P9JlC4SDPs_GlPNQw1x2yA4k);
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 25px;
+  max-width: 50%;
+  min-height: 100%;
+}
+
+footer .refernce .refernce1 .countact {
+  width: 50%;
+  padding: 15px;
+}
+
+footer .refernce .refernce1 .countact h3 {
+  margin-bottom: 5px;
+}
+
+footer .refernce .refernce2 {
+  border: 2px dashed #112c4b;
+  width: 50%;
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .refernce .refernce2 .img-triner {
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQHZksRYWTDoZA/profile-displayphoto-shrink_800_800/0/1631776920650?e=1652918400&v=beta&t=x0Hn79iG7juCSm0SMoxrZLyQwoBWE9veLM_YMPJQ7ss);
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 25px;
+  max-width: 50%;
+  min-height: 100%;
+}
+
+footer .refernce .refernce2 .countact {
+  width: 50%;
+  padding: 15px;
+}
+
+footer .refernce .refernce2 .countact h3 {
+  margin-bottom: 5px;
+}
+
+footer .countact-me {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  background-color: #123c5c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .countact-me .soial-media {
+  width: 50%;
+  min-height: 100%;
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .countact-me h1 {
+  width: 50%;
+  text-align: center;
+}
+
+footer .countact-me a {
+  text-decoration: none;
+  color: #123c5c;
+  font-size: 20pt;
+  margin-top: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer .countact-me a:hover {
+  background-color: #021312;
+  color: aliceblue;
+  padding: 20px;
+}
+
 body {
   background-position: center;
   background-repeat: no-repeat;
@@ -42,9 +191,9 @@ main nav {
   background-repeat: no-repeat;
   min-height: 70px;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -107,8 +256,8 @@ main #About {
 
 main #Skills {
   background-image: url(../img/bg4.jpg);
-  -ms-grid-rows: 200px 250px 250px;
-      grid-template-rows: 200px 250px 250px;
+  -ms-grid-rows: 200px 350px 350px;
+      grid-template-rows: 200px 350px 350px;
 }
 
 main #Qualification {
@@ -146,13 +295,14 @@ main section {
 }
 
 main section .img {
-  margin-left: 10%;
+  z-index: 2;
+  margin-left: 30%;
   background-image: url(../img/meimg.jpg);
   background-size: cover;
   opacity: 0.9;
   background-position: center;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 100%;
   -webkit-transition: 1s;
   transition: 1s;
@@ -174,20 +324,26 @@ main section .img:hover {
 }
 
 main section .Name {
+  z-index: 3;
   -ms-grid-column: span 2;
       grid-column-start: span 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100%;
 }
 
 main section .Name div {
@@ -240,8 +396,10 @@ main section .links {
   background: rgba(0, 0, 0, 0.4);
   -ms-grid-column: span 2;
       grid-column-start: span 2;
-  -ms-grid-row: span 4;
-      grid-row-start: span 4;
+  z-index: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-column-end: 4;
   -webkit-transition: 1s;
   transition: 1s;
   display: -webkit-box;
@@ -265,7 +423,7 @@ main section .links .main-nav-links {
           justify-content: space-evenly;
   min-height: 250px;
   padding-bottom: 5%;
-  width: 30%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -369,11 +527,45 @@ section .img2 {
   border-radius: 25px;
 }
 
-.soft-skills {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+.con {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  -ms-grid-row: span  3;
+      grid-row-start: span  3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.con .oft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.con .oft h3 {
+  margin-top: 30px;
+}
+
+.con .oft .soft-skills {
+  margin-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-grid-row-span: 2;
       grid-row-end: span 2;
   background-color: #13598f;
@@ -381,16 +573,13 @@ section .img2 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  width: 100%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-.soft-skills .soft {
+.con .oft .soft-skills .soft {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,10 +591,12 @@ section .img2 {
           align-items: center;
 }
 
-.soft-skills .soft p {
+.con .oft .soft-skills .soft p {
   background-color: #123c5c;
   color: #ececec;
-  width: 40%;
+  width: 100%;
+  min-height: 50%;
+  padding: 0px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,37 +611,43 @@ section .img2 {
   font-size: 15pt;
 }
 
-.technical {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: span 2;
-      grid-row-start: span 2;
-  background-color: rgba(230, 230, 230, 0.9);
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.con .bg {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.con .technical {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
 }
 
-.technical .tech {
+.con .technical .tech {
   min-height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(230, 230, 230, 0.9);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
-.technical .tech h3 {
-  width: 20%;
-  font-family: 'Roboto Slab', serif;
+.con .technical .tech h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -462,34 +659,7 @@ section .img2 {
           align-items: center;
   color: #1e2833;
   font-size: 17pt;
-}
-
-.technical .tech .progress-bar {
   border-radius: 25px;
-  background-color: #acb0b3;
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.technical .tech .progress-bar .progress::after {
-  border-radius: 25px;
-  -webkit-animation: prog1 1s ease-in-out;
-          animation: prog1 1s ease-in-out;
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #1e2833;
-  padding: 0px 15px;
-  background-color: #123c5c;
 }
 
 .quali {
@@ -603,63 +773,4 @@ section .img2 {
   font-size: 12pt;
   margin: 20px 10px;
 }
-
-/*
-@keyframes prog1{
-0%{
-    width: 70%;
-    content: "70%";
-}
-10%{
-    
-    width: 10%;
-    content: "10%";
-}
-20%{
-    
-    width: 20%;
-    content: "20%";
-}
-30%{
-    
-    width: 30%;
-    content: "30%";
-}
-40%{
-    
-    width: 40%;
-    content: "40%";
-}
-50%{
-
-    width: 50%;
-    content: "50%";
-}
-60%{
-    
-    width: 60%;
-    content: "60%";
-}
-70%{
-    
-    width: 70%;
-    content: "70%";
-}
-80%{
-    
-    width: 80%;
-    content: "80%";
-}
-90%{
-    
-    width: 90%;
-    content: "90%";
-}
-100%{
-    
-    width: 100%;
-    content: "100%";
-}
-}
-*/
 /*# sourceMappingURL=main.css.map */
