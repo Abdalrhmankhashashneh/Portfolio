@@ -265,25 +265,28 @@ main nav ul li a:hover {
 }
 
 main #About {
-  background-image: url(../img/bg3.jpg);
+
   -ms-grid-rows: 100px 250px 250px 100px;
       grid-template-rows: 100px 250px 250px 100px;
+      background-color: #1e2833;
 }
 
 main #Skills {
-  background-image: url(../img/bg4.jpg);
+
   -ms-grid-rows: 150px 375px 375px;
       grid-template-rows: 150px 375px 375px;
+      background-color: #1e2833;
 }
 
 main #Qualification {
-  background-image: url(../img/bg5.jpg);
+
   -ms-grid-rows: 200px 250px 250px;
       grid-template-rows: 200px 250px 250px;
+      background-color: #1e2833;
 }
 
 main #Certificate {
-  background-image: url(../img/bg5.jpg);
+
   -ms-grid-rows: 200px 250px 250px;
       grid-template-rows: 200px 250px 250px;
 }
@@ -294,15 +297,14 @@ main section:hover {
 
 main section {
   z-index: 1;
-  border: #1e2833 dashed 3px;
-  opacity: 0.9;
+ 
   -webkit-transition: 1s;
   transition: 1s;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50%)[2];
+
       grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: 100px 225px 225px 200px;
+
       grid-template-rows: 100px 225px 225px 200px;
   min-height: 750px;
   width: 100%;
@@ -322,11 +324,11 @@ main section .img {
   border-radius: 100%;
   -webkit-transition: 1s;
   transition: 1s;
-  -ms-grid-row: 2;
+
       grid-row-start: 2;
-  -ms-grid-row-span: 2;
+
       grid-row-end: span 2;
-  -webkit-box-shadow: white 8px 6px 50px;
+ 
           box-shadow: white 8px 6px 50px;
   border: 5px solid #292525;
   border-style: dashed;
@@ -341,23 +343,18 @@ main section .img:hover {
 
 main section .Name {
   z-index: 3;
-  -ms-grid-column: span 2;
+
       grid-column-start: span 2;
-  -ms-grid-row: 2;
+
       grid-row-start: 2;
   grid-row-end: 3;
-  display: -webkit-box;
-  display: -ms-flexbox;
+ 
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+ 
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
+ 
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
+ 
           align-items: flex-start;
   min-height: 100%;
 }
@@ -367,24 +364,21 @@ main section .Name div {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   border-radius: 20px;
-  -ms-flex-item-align: center;
+ 
       align-self: center;
   min-height: 150px;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+ 
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+  
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+ 
+     
           flex-direction: column;
-  -webkit-transition: 1s;
+ 
   transition: 1s;
 }
 
@@ -410,42 +404,38 @@ main section .Name div:hover {
 main section .links {
   background-color: black;
   background: rgba(0, 0, 0, 0.4);
-  -ms-grid-column: span 2;
+ 
       grid-column-start: span 2;
   z-index: 2;
-  -ms-grid-row: 3;
+  
       grid-row-start: 3;
   grid-column-end: 4;
-  -webkit-transition: 1s;
+ 
   transition: 1s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
+  
+   
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+
           align-items: center;
 }
 
 main section .links .main-nav-links {
   margin-right: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+ 
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
+ 
           justify-content: space-evenly;
   min-height: 250px;
   padding-bottom: 5%;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+  
           align-items: center;
-  -webkit-transition: 1s;
+ 
   transition: 1s;
-  -ms-flex-wrap: wrap;
+
       flex-wrap: wrap;
 }
 
@@ -455,7 +445,7 @@ main section .links .main-nav-links a {
   font-size: 20pt;
   padding: 2px 15px;
   text-decoration: none;
-  -webkit-transition: 0.5s ease-in-out;
+
   transition: 0.5s ease-in-out;
 }
 
@@ -466,7 +456,7 @@ main section .links .main-nav-links a:hover {
 
 main section .links:hover {
   background-color: #181818;
-  -webkit-box-shadow: #383838 4px 5px 50px;
+ 
           box-shadow: #383838 4px 5px 50px;
   opacity: 1;
   z-index: 2;
@@ -474,21 +464,19 @@ main section .links:hover {
 
 section .text {
   background-color: #13598f;
-  -ms-grid-row: 2;
+ 
       grid-row-start: 2;
-  -ms-grid-row-span: 2;
+ 
       grid-row-end: span 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
+ 
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+  
+      
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+ 
+     
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+ 
       -ms-flex-direction: column;
           flex-direction: column;
   color: aliceblue;
@@ -497,14 +485,14 @@ section .text {
 
 section .text h1 {
   font-size: 50pt;
-  -ms-flex-item-align: start;
+
       align-self: flex-start;
   margin: 10% 2%;
 }
 
 section .text p {
   font-size: 15pt;
-  -ms-flex-item-align: start;
+
       align-self: flex-start;
   margin: 10% 2%;
 }
@@ -515,9 +503,9 @@ section .img2 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  -ms-grid-column: span 2;
+
       grid-column-start: span 2;
-  -ms-grid-row: 2;
+
       grid-row-start: 2;
   grid-row-end: 4;
 }
@@ -1075,4 +1063,5 @@ footer .countact-me h1 {
 width: 100%;
 }
 }
+
 /*# sourceMappingURL=main.css.map */

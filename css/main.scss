@@ -217,20 +217,24 @@ nav{
 #About{
     background-image: url(../img/bg3.jpg);
     grid-template-rows: 100px 250px 250px 100px;
+    background-color: #1e2833;
 }
 #Skills{
     background-image: url(../img/bg4.jpg);
     grid-template-rows: 150px 375px 375px ;
+    background-color: #1e2833;
     
 }
 #Qualification{
     background-image: url(../img/bg5.jpg);
     grid-template-rows: 200px 250px 250px ;
+    background-color: #1e2833;
     
 }
 #Certificate{
     background-image: url(../img/bg5.jpg);
     grid-template-rows: 200px 250px 250px ;
+    background-color: #1e2833;
     
 }
 section:hover{
@@ -669,7 +673,9 @@ section{
         grid-row-end: span 2;
       
         .unv-img{
+
             width: 100%;
+
         }
         .des{
             width: 100%;
@@ -882,9 +888,7 @@ padding: 15px;
     margin-bottom: 0px;
 }
 footer .countact-me a {
- 
     font-size: 10pt;
-  
     transition: 1s;
     margin-left: 15px;
 }
