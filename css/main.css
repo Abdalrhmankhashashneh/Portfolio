@@ -98,7 +98,7 @@ footer .refernce .refernce2 {
 }
 
 footer .refernce .refernce2 .img-triner {
-  background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQHZksRYWTDoZA/profile-displayphoto-shrink_800_800/0/1631776920650?e=1652918400&v=beta&t=x0Hn79iG7juCSm0SMoxrZLyQwoBWE9veLM_YMPJQ7ss);
+  background-image: url(https://media-exp1.licdn.com/dms/image/C4E03AQGLXWmSMOM4NQ/profile-displayphoto-shrink_800_800/0/1618651056345?e=1652918400&v=beta&t=6faT2E7dOwXZa5zjpTFJQzRewkP4bAR5AtL5DAv8_gQ);
   width: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -1061,6 +1061,9 @@ footer .countact-me h1 {
 }
 .certificate .company-img {
 width: 100%;
+}
+footer .countact-me h1 {
+  font-size: 15pt;
 }
 }
 
