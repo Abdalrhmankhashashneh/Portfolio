@@ -21,8 +21,8 @@ footer {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 350px 350px;
-      grid-template-rows: 350px 350px;
+  -ms-grid-rows: 700px 150px;
+      grid-template-rows: 700px 150px;
   background-color: #1e2833;
   color: aliceblue;
 }
@@ -39,25 +39,32 @@ footer .refernce {
 }
 
 footer .refernce .refernce1 {
-  border: 2px dashed #112c4b;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 700px;
 }
 
 footer .refernce .refernce1 .img-triner {
   background-image: url(https://media-exp1.licdn.com/dms/image/C4D0BAQEIG5RkDRNPvg/company-logo_200_200/0/1574431121488?e=1655337600&v=beta&t=D4QbdfDXFNA5dnWSL-1P9JlC4SDPs_GlPNQw1x2yA4k);
-  width: 50%;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-radius: 25px;
-  max-width: 50%;
-  min-height: 100%;
+  width: 100%;
+  min-height: 50%;
 }
 
 footer .refernce .refernce1 .countact {
@@ -70,7 +77,6 @@ footer .refernce .refernce1 .countact h3 {
 }
 
 footer .refernce .refernce2 {
-  border: 2px dashed #112c4b;
   width: 50%;
   -ms-grid-column: span 2;
       grid-column-start: span 2;
@@ -80,6 +86,15 @@ footer .refernce .refernce2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 700px;
 }
 
 footer .refernce .refernce2 .img-triner {
@@ -90,7 +105,7 @@ footer .refernce .refernce2 .img-triner {
   background-size: contain;
   border-radius: 25px;
   max-width: 50%;
-  min-height: 100%;
+  min-height: 50%;
 }
 
 footer .refernce .refernce2 .countact {
@@ -107,7 +122,6 @@ footer .countact-me {
       grid-column-start: span 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
-  background-color: #123c5c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,7 +134,7 @@ footer .countact-me {
 }
 
 footer .countact-me .soial-media {
-  width: 50%;
+  width: 80%;
   min-height: 100%;
   background-color: aliceblue;
   display: -webkit-box;
@@ -132,10 +146,8 @@ footer .countact-me .soial-media {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 footer .countact-me h1 {
@@ -147,9 +159,9 @@ footer .countact-me a {
   text-decoration: none;
   color: #123c5c;
   font-size: 20pt;
-  margin-top: 30px;
   -webkit-transition: 1s;
   transition: 1s;
+  margin-left: 15px;
 }
 
 footer .countact-me a:hover {
@@ -194,6 +206,8 @@ main nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -221,6 +235,8 @@ main nav ul {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 80%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -256,8 +272,8 @@ main #About {
 
 main #Skills {
   background-image: url(../img/bg4.jpg);
-  -ms-grid-rows: 200px 350px 350px;
-      grid-template-rows: 200px 350px 350px;
+  -ms-grid-rows: 150px 375px 375px;
+      grid-template-rows: 150px 375px 375px;
 }
 
 main #Qualification {
@@ -580,6 +596,7 @@ section .img2 {
 }
 
 .con .oft .soft-skills .soft {
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -634,6 +651,7 @@ section .img2 {
 }
 
 .con .technical .tech {
+  margin-top: 15px;
   min-height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,7 +662,7 @@ section .img2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 100%;
+  width: 80%;
 }
 
 .con .technical .tech h3 {
@@ -730,6 +748,8 @@ section .img2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .certificate .company-img {
@@ -772,5 +792,287 @@ section .img2 {
 .certificate .des p {
   font-size: 12pt;
   margin: 20px 10px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  #Home {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100px 225px 225px 250px;
+        grid-template-rows: 100px 225px 225px 250px;
+  }
+  #Home .img {
+    width: 225px;
+    height: 225px;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 35%;
+  }
+  #Home .links {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  #Home .links .main-nav-links {
+    width: 100%;
+  }
+  #Home .Name {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #About {
+    background-image: url(../img/bg3.jpg);
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 350px 350px;
+        grid-template-rows: 350px 350px;
+  }
+  #About .text {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    width: 100%;
+    padding: 10%;
+  }
+  #About .text h1 {
+    font-size: 30pt;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  #About .text p {
+    font-size: 10pt;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  #About .img2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+  }
+  #Qualification {
+    background-image: url(../img/bg5.jpg);
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100px 300px 300px;
+        grid-template-rows: 100px 300px 300px;
+  }
+  #Qualification .main-subject h1 {
+    font-size: 30pt;
+  }
+  #Qualification .quali {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+  }
+  #Qualification .quali .unv-img {
+    width: 100%;
+  }
+  #Qualification .quali .des {
+    width: 100%;
+  }
+  #Certificate {
+    background-image: url(../img/bg5.jpg);
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100px 300px 300px;
+        grid-template-rows: 100px 300px 300px;
+  }
+  #Certificate .main-subject h1 {
+    font-size: 30pt;
+  }
+  #Certificate .certificate {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #Certificate .certificate .des {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #Home {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100px 225px 225px 250px;
+        grid-template-rows: 100px 225px 225px 250px;
+  }
+  #Home .img {
+    width: 225px;
+    height: 225px;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 20%;
+  }
+  #Home .links {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  #Home .links .main-nav-links {
+    width: 100%;
+  }
+  #Home .Name {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #About {
+    background-image: url(../img/bg3.jpg);
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 350px 350px;
+        grid-template-rows: 350px 350px;
+  }
+  #About .text {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    width: 100%;
+    padding: 10% 0%;
+  }
+  #About .text h1 {
+    font-size: 30pt;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  #About .text p {
+    font-size: 10pt;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0;
+    margin: 0;
+  }
+  #About .img2 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+  }
+  #Qualification {
+    background-image: url(../img/bg5.jpg);
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100px 300px 300px;
+        grid-template-rows: 100px 300px 300px;
+  }
+  #Qualification .main-subject h1 {
+    font-size: 30pt;
+  }
+  #Qualification .quali {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #Qualification .quali .unv-img {
+    width: 100%;
+  }
+  #Qualification .quali .des {
+    width: 100%;
+  }
+  .b{
+    font-size: 15pt;
+  }
+  .countact{
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .countact p{
+    font-size: 5pt;
+  }
+  .main-subject h1{
+    font-size: 30pt;
+  }
+  footer .countact-me a {
+ 
+    font-size: 10pt;
+}
+footer .countact-me h1 {
+  font-size: 25pt;
+}
+.certificate .company-img {
+width: 100%;
+}
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,38 +7,44 @@
 }
 html{
     scroll-behavior: smooth ; 
-    
 } 
 h3{
 
     font-size: 30pt;
     color: #dadde0;
     font-family: 'Roboto Slab', serif;
-    
     padding: 2%;
 
 }
 footer{
        display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 350px 350px ;
+        grid-template-rows: 700px 150px ;
         background-color: #1e2833;
         color: aliceblue;
         .refernce{
+
             width: 100%;
             background-color: #021312;
             background: rgba(0, 0, 0, 0.6);
             grid-column-start: span 2;
             display: flex;
+            
+         
+          
         .refernce1{
-            border: 2px dashed rgb(17, 44, 75);
+          
             width: 50%;
-            
-           
-            display: flex;
-            
-            align-items: center;
-            
+       
+        grid-column-start: span 2;
+        display: flex;  
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 700px;
+  
+        
        
         .img-triner{
        
@@ -46,10 +52,10 @@ footer{
             width: 50%;
             background-position: center;
             background-repeat: no-repeat;
-            background-size:contain ;
+           
             border-radius: 25px;
             max-width: 50%;
-            min-height: 100%;
+            min-height: 50%;
             
         }
         .countact{
@@ -62,14 +68,18 @@ footer{
        
     }
     .refernce2{
-        border: 2px dashed rgb(17, 44, 75);
+       
         width: 50%;
        
         grid-column-start: span 2;
         display: flex;
         
         align-items: center;
-        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 700px;
+
    
     .img-triner{
    
@@ -80,7 +90,7 @@ footer{
         background-size:contain ;
         border-radius: 25px;
         max-width: 50%;
-        min-height: 100%;
+        min-height: 50%;
         
     }
     .countact{
@@ -96,31 +106,29 @@ footer{
            
             grid-column-start: span 2;
             grid-row-start: 2 ;
-           background-color: #123c5c;
            display : flex ;
            justify-content: center;
            align-items: center;
            .soial-media{
-               width: 50%;
+
+               width: 80%;
                min-height: 100%;
                background-color: aliceblue;
                display: flex;
                justify-content: center;
                align-items: center;
-               flex-direction: column;
-               
+               flex-wrap: wrap;
            }
            h1{
                width: 50%;
-               text-align: center;
-               
+               text-align: center; 
            }
            a{
                text-decoration: none;
                color: #123c5c;
                font-size: 20pt;
-               margin-top: 30px;
                transition: 1s;
+               margin-left: 15px;
            }
            a:hover{
 
@@ -163,6 +171,7 @@ nav{
     min-height: 70px;
     width: 100%;
     justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
     position: sticky;
     top: 0px;
@@ -179,6 +188,7 @@ nav{
         ul{
         display: flex;
         list-style: none;
+        flex-wrap: wrap;
         width: 80%;
         justify-content: space-evenly;
         align-items: center;
@@ -210,7 +220,7 @@ nav{
 }
 #Skills{
     background-image: url(../img/bg4.jpg);
-    grid-template-rows: 200px 350px 350px ;
+    grid-template-rows: 150px 375px 375px ;
     
 }
 #Qualification{
@@ -432,7 +442,7 @@ section{
     width: 100%;
     justify-content: space-evenly;
     .soft{
-       
+       margin-top: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -465,12 +475,13 @@ section{
     align-items: center;
     border-radius: 25px;
     .tech{
+        margin-top: 15px;
         min-height: 10%;
         display: flex;
         flex-wrap: wrap;
         background-color: rgba(230, 230, 230 , 0.9);
         justify-content: space-evenly;
-        width: 100%;
+        width: 80%;
         h3{
             display: flex;
             justify-content: center;
@@ -530,10 +541,24 @@ section{
     
 }
 .certificate{
+    .main-subject{
+        background: rgba(0, 0, 0, 0.6);
+        grid-column-start: span 2;
+        display: flex;
+        justify-content: center;
+        align-items:flex-end ;
+        
+        h1{
+            font-size:70pt;
+            padding: 5px 15px;
+            border-radius: 25px;
+        }
+    }
     background-color: rgba(16, 26, 21, 0.9);
     grid-column-start: span 2;
     grid-row-start: span 2;
     display: flex;
+    flex-wrap: wrap;
        .company-img{
         background-color: #071422;
         width: 50%;
@@ -560,9 +585,310 @@ section{
             margin: 20px 10px;
         }
        }
+    
    }
 
+   @media screen and (min-width: 480px) and (max-width: 768px)
+   { 
+      #Home{
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 225px 225px 250px;
 
+        .img{
+            width: 225px;
+            height: 225px;
+            grid-row-start: 2;
+            grid-row-end: span 1;
+            justify-content: flex-end;
+            margin-left: 35%;
+        }
+        .links{
+            grid-column-start: 1;
+            grid-row-start: 4;
+            grid-row-end: span 1;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 0;
+            margin-right: 0;
+
+            .main-nav-links{
+                width: 100%;
+            }
+        }
+        .Name{
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: span 1;
+            justify-content: center;           
+        }
+      }
+      #About{
+        background-image: url(../img/bg3.jpg);
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 350px;
+    
+      .text{
+        grid-column-start: 1;
+        grid-row-start:  3;
+        grid-row-end: span 2;
+        width: 100%;
+        padding: 10%;
+        h1{
+            font-size: 30pt;
+            align-self: center;
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            font-size: 10pt;
+            align-self: center;
+            padding: 0;
+            margin: 0;
+            
+        }
+    }
+    .img2{
+        grid-column-start: 1;
+        grid-row-start:  2;
+        grid-row-end: span 1;
+       
+    }
+}
+#Qualification{
+    .main-subject{
+        h1{
+        font-size: 30pt;
+        }
+    }
+    background-image: url(../img/bg5.jpg);
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 300px 300px ;
+    .quali{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+      
+        .unv-img{
+            width: 100%;
+        }
+        .des{
+            width: 100%;
+        }
+    }
+}
+#Certificate{
+    .main-subject{
+        h1{
+        font-size: 15t;
+        }
+    }
+    background-image: url(../img/bg5.jpg);
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 300px 300px ;
+  
+  .certificate{
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+        flex-wrap: nowrap;
+     
+        justify-content: center;
+        align-items: center;
+        
+        .des{
+            width: 50%;
+            
+        }
+  }
+}
+
+.refernce{
+
+
+    flex-direction: column;
+    justify-content: center;
+ align-items: center;
+  
+.refernce1{
+    width: 100%;
+    min-height: 350px;
+    
+    
+
+
+
+.img-triner{
+
+
+    
+}
+.countact{
+  
+    h3{
+        font-size: 10pt;
+        margin-bottom: 0px;
+    }
+}
+
+}
+.refernce2{
+width: 100%;
+min-height: 350px;
+
+.img-triner{
+width: 100%;
+}
+.countact{
+width: 50%;
+padding: 15px;
+h3{
+    font-size: 10pt;
+    margin-bottom: 0px;
+}
+}
+}
+   }
+   @media screen and (max-width: 479px){
+    #Home{
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 225px 225px 250px;
+
+        .img{
+            width: 225px;
+            height: 225px;
+            grid-row-start: 2;
+            grid-row-end: span 1;
+            justify-content: flex-end;
+            margin-left: 20%;
+        }
+        .links{
+            grid-column-start: 1;
+            grid-row-start: 4;
+            grid-row-end: span 1;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 0;
+            margin-right: 0;
+
+            .main-nav-links{
+                width: 100%;
+            }
+        }
+        .Name{
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: span 1;
+          
+            justify-content: center;
+            
+        }
+      }
+      #About{
+        background-image: url(../img/bg3.jpg);
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 350px;
+    
+      .text{
+        grid-column-start: 1;
+        grid-row-start:  3;
+        grid-row-end: span 2;
+        width: 100%;
+        padding: 10%;
+        h1{
+            font-size: 30pt;
+            align-self: center;
+            padding: 0;
+            margin: 0;
+        }
+        p{
+            font-size: 10pt;
+            align-self: center;
+            padding: 0;
+            margin: 0;
+            
+        }
+    }
+    .img2{
+        grid-column-start: 1;
+        grid-row-start:  2;
+        grid-row-end: span 1;
+       
+    }
+}
+#Qualification{
+    .main-subject{
+        h1{
+        font-size: 30pt;
+        }
+    }
+    background-image: url(../img/bg5.jpg);
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 300px 300px ;
+    .quali{
+
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+        flex-wrap: wrap;
+        .unv-img{
+            width: 100%;
+        }
+        .des{
+            width: 100%;
+        }
+    }
+ }
+ .refernce{
+
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+.refernce1{
+    width: 100%;
+    min-height: 350px;
+    
+    
+
+
+
+.img-triner{
+
+
+    
+}
+.countact{
+  
+
+}
+
+}
+.refernce2{
+width: 100%;
+min-height: 350px;
+
+.img-triner{
+width: 100%;
+}
+.countact{
+width: 50%;
+padding: 15px;
+
+}
+}
+.b{
+    font-size: 10pt;
+    margin-bottom: 0px;
+}
+footer .countact-me a {
+ 
+    font-size: 10pt;
+  
+    transition: 1s;
+    margin-left: 15px;
+}
+}
 
 
 
